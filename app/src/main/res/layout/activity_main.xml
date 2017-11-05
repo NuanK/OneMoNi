@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.test.onemoni.MainActivity">
+    <include layout="@layout/activity_title"></include>
+
+    <com.bwie.test.onemoni.MyRoundProcess
+        android:layout_centerInParent="true"
+        android:background="@android:color/white"
+        android:id="@+id/my_round_process"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:roundColor="@android:color/darker_gray"
+        app:roundProgressColor="@android:color/holo_red_light"
+        app:textSize="22sp"
+        app:textColor="@android:color/holo_red_light"
+
+        android:layout_width="200dip"
+        android:layout_height="200dip"/>
+
+    <Button
+        android:id="@+id/zxing"
+        android:layout_width="match_parent"
+        android:onClick="beginAnim"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="扫描二维码"/>
+
+</LinearLayout>
